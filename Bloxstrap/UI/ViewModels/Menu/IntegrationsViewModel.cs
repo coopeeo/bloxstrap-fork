@@ -112,7 +112,7 @@ namespace Bloxstrap.UI.ViewModels.Menu
 
         public IReadOnlyCollection<Enums.DiscordJoinType> DiscordJoinTypes => DiscordJoinTypeEx.Selections;
 
-        public Enums.CursorType SelectedDiscordJoinType
+        public Enums.DiscordJoinType SelectedDiscordJoinType
         {
             get => App.Settings.Prop.DiscordJoinType;
             set => App.Settings.Prop.DiscordJoinType = value;
