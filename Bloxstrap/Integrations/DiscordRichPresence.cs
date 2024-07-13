@@ -288,7 +288,7 @@ namespace Bloxstrap.Integrations
                 
             };
 
-            _currentPresence = _currentPresence.WithParty(_currentParty)
+            _currentPresence = _currentPresence.WithParty(_currentParty);
 
             // this is used for configuration from BloxstrapRPC
             _currentPresenceCopy = _currentPresence.Clone();
