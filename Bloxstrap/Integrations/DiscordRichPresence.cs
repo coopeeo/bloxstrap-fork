@@ -9,6 +9,8 @@ namespace Bloxstrap.Integrations
         
         private DiscordRPC.RichPresence? _currentPresence;
         private DiscordRPC.RichPresence? _currentPresenceCopy;
+        private DiscordRPC.Party? _currentParty;
+        private DiscordRPC.Party? _currentPartyCopy;
         private Message? _stashedRPCMessage;
 
         private bool _visible = true;
@@ -233,7 +235,7 @@ namespace Bloxstrap.Integrations
 
             List<Button> buttons = new();
 
-            if (!App.Settings.Prop.HideRPCButtons && _activityWatcher.ActivityServerType == ServerType.Public)
+            if (App.Settings.Prop.SelectedDiscordJoinType == DiscordJoinTypes.Anyone && _activityWatcher.ActivityServerType == ServerType.Public)
             {
                 buttons.Add(new Button
                 {
@@ -279,8 +281,18 @@ namespace Bloxstrap.Integrations
                 }
             };
 
+            _currentParty = new DiscordRPC.Party
+            {
+                Size = 1,
+                Max = 10,
+                
+            };
+
+            _currentPresence = _currentPresence.WithParty(_currentParty)
+
             // this is used for configuration from BloxstrapRPC
             _currentPresenceCopy = _currentPresence.Clone();
+            _currentPartyCopy = _currentParty.Clone();
 
             if (_stashedRPCMessage is not null)
             {

@@ -2,6 +2,7 @@
 {
     public enum DiscordJoinType
     {
+        Off,
         Anyone,
         Invites
     }

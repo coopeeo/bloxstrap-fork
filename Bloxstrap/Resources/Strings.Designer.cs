@@ -849,7 +849,16 @@ namespace Bloxstrap.Resources {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to 2006 (Cartoony).
+        ///   Looks up a localized string similar to Anyone (Default).
+        /// </summary>
+        public static string Enums_DiscordJoinType_Off {
+            get {
+                return ResourceManager.GetString("Enums.DiscordJoinType.Off", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Anyone (Default).
         /// </summary>
         public static string Enums_DiscordJoinType_Anyone {
             get {
@@ -858,7 +867,7 @@ namespace Bloxstrap.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2013 (Angular).
+        ///   Looks up a localized string similar to Discord Invites.
         /// </summary>
         public static string Enums_DiscordJoinType_Invites {
             get {
