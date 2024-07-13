@@ -59,7 +59,7 @@
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Integrations_AllowActivityJoining_Title}" 
-            Description="{x:Static resources:Strings.Strings.Menu_Integrations_AllowActivityJoining_Description}">
+            Description="{x:Static resources:Strings.Menu_Integrations_AllowActivityJoining_Description}">
             <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="220" ItemsSource="{Binding DiscordJoinTypes, Mode=OneTime}" Text="{Binding SelectedDiscordJoinType, Mode=TwoWay}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
