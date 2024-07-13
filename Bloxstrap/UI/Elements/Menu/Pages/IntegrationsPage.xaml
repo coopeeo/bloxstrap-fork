@@ -59,7 +59,8 @@
 
         <controls:OptionControl 
             Header="{x:Static resources:Strings.Menu_Integrations_AllowActivityJoining_Title}" 
-            Description="{x:Static resources:Strings.Menu_Integrations_AllowActivityJoining_Description}">
+            Description="{x:Static resources:Strings.Menu_Integrations_AllowActivityJoining_Description}"
+            IsEnabled="{Binding InnerContent.IsChecked, ElementName=DiscordActivityOption, Mode=OneWay}">
             <ComboBox Margin="5,0,0,0" Padding="10,5,10,5" Width="220" ItemsSource="{Binding DiscordJoinTypes, Mode=OneTime}" Text="{Binding SelectedDiscordJoinType, Mode=TwoWay}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
@@ -67,7 +68,6 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <ui:ToggleSwitch IsChecked="{Binding DiscordActivityJoinEnabled, Mode=TwoWay}" />
         </controls:OptionControl>
 
         <TextBlock Text="{x:Static resources:Strings.Menu_Integrations_Custom_Title}" FontSize="20" FontWeight="Medium" Margin="0,16,0,0" />
