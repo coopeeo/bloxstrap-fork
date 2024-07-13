@@ -847,6 +847,24 @@ namespace Bloxstrap.Resources {
                 return ResourceManager.GetString("Enums.CursorType.From2013", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to 2006 (Cartoony).
+        /// </summary>
+        public static string Enums_DiscordJoinType_Anyone {
+            get {
+                return ResourceManager.GetString("Enums.DiscordJoinType.Anyone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2013 (Angular).
+        /// </summary>
+        public static string Enums_DiscordJoinType_Invites {
+            get {
+                return ResourceManager.GetString("Enums.DiscordJoinType.Invites", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to Catmoji.

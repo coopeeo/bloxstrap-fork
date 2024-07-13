@@ -362,6 +362,12 @@ If not, then please report this exception through a [GitHub issue]({1}) along wi
   <data name="Enums.CursorType.From2013" xml:space="preserve">
     <value>2013 (Angular)</value>
   </data>
+  <data name="Enums.DiscordRPCJoin.Anyone" xml:space="preserve">
+    <value>Anyone (Default)</value>
+  </data>
+  <data name="Enums.DiscordJoinType.Invites" xml:space="preserve">
+    <value>Discord Invites</value>
+  </data>
   <data name="Enums.EmojiType.Catmoji" xml:space="preserve">
     <value>Catmoji</value>
   </data>

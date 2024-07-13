@@ -110,6 +110,14 @@ namespace Bloxstrap.UI.ViewModels.Menu
             set => App.Settings.Prop.HideRPCButtons = !value;
         }
 
+        public IReadOnlyCollection<Enums.DiscordJoinType> DiscordJoinTypes => DiscordJoinTypeEx.Selections;
+
+        public Enums.CursorType SelectedDiscordJoinType
+        {
+            get => App.Settings.Prop.DiscordJoinType;
+            set => App.Settings.Prop.DiscordJoinType = value;
+        }
+
         public bool DisableAppPatchEnabled
         {
             get => App.Settings.Prop.UseDisableAppPatch;
